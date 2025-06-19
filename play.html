@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/2b42ec6388.js" crossorigin="anonymous"></script>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <title>REV TORQUE CAR GAME</title>
+</head>
+<body>
+  
+  
+  <style>
+  
+  *{
+    margin: 0;
+    padding: 0;
+  }
+ 
+  
+  body{
+    background: #36454F;
+    height: 100%;
+    width: 90%;
+  }
+  
+  .back{
+    color: black;
+    background-color: red;
+    font-weight: bold;
+    font-size: 22px;
+    margin-left: 10px;
+    margin-top: 5px;
+    height: 35px;
+    width: 50px;
+    border: 2px solid orange;
+    border-radius: 10px;
+    opacity: 0;
+  transform: translateX(-30px);
+  animation: slideup 0.8s ease-out forwards;
+}
+
+@keyframes slideup {
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  }
+  
+  .logo2{
+  height: 40px; 
+  width: 40px;
+  position: absolute;
+  margin-left: 255px;
+  margin-top: 5px;  
+  border-radius: 50%; 
+  opacity: 0;
+  transform: translateX(30px);
+  animation: slideup 0.8s ease-out forwards;
+}
+
+@keyframes slideup {
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  }
+  
+  h1{
+    color: white;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left: 25%;
+    opacity: 0;
+  transform: translateY(0);
+  animation: slideup 0.8s ease-out forwards;
+}
+  
+@keyframes slideup {
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  }
+  
+  .f1{
+    height: 60px;
+    width: 230px;
+    border-radius: 15px;
+   margin-left: 18%;
+    margin-top: 30px;
+    background: rgba(0, 0, 0, 0.6); /* Black with transparency */
+  backdrop-filter: blur(0.2px); /* Blur effect */
+  -webkit-backdrop-filter: blur(0.2px); /* Safari support */
+  color: white;  
+  }
+  
+  .f1-choose{
+    margin-left: 0px;
+    width: 70px;
+    height: 60px;
+    background-color: whitesmoke;
+    border-radius: 15px;
+  }
+  
+  p1{
+    position: absolute;
+    margin-left: 25px;
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 20px;
+    opacity: 1;
+    transition: opacity 0.2s ease;
+  }
+ 
+  .f1:hover{
+    cursor: pointer;
+  }
+  
+  .f1:hover p1{
+    opacity: 0;
+  }
+  
+  .f1:hover .f1-choose{
+    transform: translateX(0);
+    animation: slide1 0.8s ease-out forwards;
+}
+  
+  @keyframes slide1 {
+  to {
+    transform: translateX(160px);
+    opacity: 1;
+  }
+  }
+  
+  .go{
+    height: 40px;
+    width: 80px;
+    position: absolute;
+    margin-top: 10px;
+    margin-left: -25px;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 10px;
+    border: 2px solid black;
+    background: white;
+    opacity: 0;
+    box-shadow: 0 0 2px black inset;
+}
+  
+  a{
+    text-decoration: none;
+    color: black;
+  }
+  
+  .go:hover{
+    cursor: pointer;
+  }
+  
+  .f1:hover .go{
+    transition: opacity 4s ease;
+    opacity: 1;
+  }
+  
+  .lambo{
+    height: 60px;
+    width: 230px;
+    border-radius: 15px;
+    margin-left: 18%;
+    margin-top: 20px;
+    background: rgba(0, 0, 0, 0.6); /* Black with transparency */
+  backdrop-filter: blur(0.2px); /* Blur effect */
+  -webkit-backdrop-filter: blur(0.2px); /* Safari support */
+  color: white; 
+  }
+  
+  .lambo:hover{
+    cursor: pointer;
+  }
+  
+  .lambo-choose{
+    margin-left: 0px;
+    width: 70px;
+    height: 60px;
+    background-color: whitesmoke;
+    border-radius: 15px;
+  }
+  
+  p2{
+     position: absolute;
+    margin-left: 5px;
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 20px;
+    opacity: 1;
+    transition: opacity 0.2s ease;
+  }
+  
+  .lambo:hover p2{
+    opacity: 0;
+  }
+  
+  .lambo:hover .lambo-choose{
+    transform: translateX(0);
+    animation: slide1 0.8s ease-out forwards;
+}
+  
+  
+  .go2{
+    height: 40px;
+    width: 80px;
+    position: absolute;
+    margin-top: 10px;
+    margin-left: -25px;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 10px;
+    border: 2px solid black;
+    background: white;
+    opacity: 0;
+    box-shadow: 0 0 2px black inset;
+  }
+  
+  .go2:hover{
+    cursor: pointer;
+  }
+  
+  .lambo:hover .go2{
+    transition: opacity 4s ease;
+    opacity: 1;
+  }
+  
+  .porsche{
+    height: 60px;
+    width: 230px;
+    border-radius: 15px;
+    margin-left: 18%;
+    margin-top: 20px;
+    background: rgba(0, 0, 0, 0.6); /* Black with transparency */
+  backdrop-filter: blur(0.2px); /* Blur effect */
+  -webkit-backdrop-filter: blur(0.2px); /* Safari support */
+  color: white; 
+  }
+  
+  .porsche:hover{
+    cursor: pointer;
+  }
+  
+  .porsche-choose{
+    margin-left: 0px;
+    width: 70px;
+    height: 60px;
+    background-color: whitesmoke;
+    border-radius: 15px;
+  }
+  
+  p3{
+   position: absolute;
+    margin-left: 30px;
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 20px;
+    opacity: 1;
+    transition: opacity 0.2s ease;
+  }
+  
+  .porsche:hover p3{
+    opacity: 0; 
+  }
+  
+  .porsche:hover .porsche-choose{
+    transform: translateX(0);
+    animation: slide1 0.8s ease-out forwards;
+}
+  
+  .go3{
+    height: 40px;
+    width: 80px;
+    position: absolute;
+    margin-top: 10px;
+    margin-left: -25px;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 10px;
+    border: 2px solid black;
+    background: white;
+    opacity: 0;
+    box-shadow: 0 0 2px black inset;
+  }
+  
+  .go3:hover{
+    cursor: pointer;
+  }
+  
+  .porsche:hover .go3{
+    transition: opacity 4s ease;
+    opacity: 1;
+  }
+  
+  .mercedes{
+    height: 60px;
+    width: 230px;
+    border-radius: 15px;
+    margin-left: 18%;
+    margin-top: 20px;
+    background: rgba(0, 0, 0, 0.6); /* Black with transparency */
+  backdrop-filter: blur(0.2px); /* Blur effect */
+  -webkit-backdrop-filter: blur(0.2px); /* Safari support */
+  color: white; 
+  }
+  
+  .mercedes:hover{
+    cursor: pointer;
+  }
+  
+  .mercedes-choose{
+    margin-left: 0px;
+    width: 70px;
+    height: 60px;
+    background-color: whitesmoke;
+    border-radius: 15px;
+  }
+  
+  p4{
+   position: absolute;
+    margin-left: 5px;
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 15px;
+    opacity: 1;
+    transition: opacity 0.2s ease;
+  }
+  
+  .mercedes:hover p4{
+    opacity: 0; 
+  }
+  
+  .mercedes:hover .mercedes-choose{
+    transform: translateX(0);
+    animation: slide1 0.8s ease-out forwards;
+}
+  
+  .go4{
+    height: 40px;
+    width: 80px;
+    position: absolute;
+    margin-top: 10px;
+    margin-left: -25px;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 10px;
+    border: 2px solid black;
+    background: white;
+    opacity: 0;
+    box-shadow: 0 0 2px black inset;
+  }
+  
+  .go4:hover{
+    cursor: pointer;
+  }
+  
+  .mercedes:hover .go4{
+    transition: opacity 4s ease;
+    opacity: 1;
+  } 
+  
+  .bmw{
+    height: 60px;
+    width: 230px;
+    border-radius: 15px;
+    margin-left: 18%;
+    margin-top: 20px;
+    background: rgba(0, 0, 0, 0.6); /* Black with transparency */
+  backdrop-filter: blur(0.2px); /* Blur effect */
+  -webkit-backdrop-filter: blur(0.2px); /* Safari support */
+  color: white; 
+  }
+  
+  .bmw:hover{
+    cursor: pointer;
+  }
+  
+  .bmw-choose{
+    margin-left: 0px;
+    width: 70px;
+    height: 60px;
+    background-color: whitesmoke;
+    border-radius: 15px;
+  }
+  
+  p5{
+   position: absolute;
+    margin-left: 30px;
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 20px;
+    opacity: 1;
+    transition: opacity 0.2s ease;
+  }
+  
+  .bmw:hover p5{
+    opacity: 0; 
+  }
+  
+  .bmw:hover .bmw-choose{
+    transform: translateX(0);
+    animation: slide1 0.8s ease-out forwards;
+}
+  
+  .go5{
+    height: 40px;
+    width: 80px;
+    position: absolute;
+    margin-top: 10px;
+    margin-left: -25px;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 10px;
+    border: 2px solid black;
+    background: white;
+    opacity: 0;
+    box-shadow: 0 0 2px black inset;
+  }
+  
+  .go5:hover{
+    cursor: pointer;
+  }
+  
+  .bmw:hover .go5{
+    transition: opacity 4s ease;
+    opacity: 1;
+  } 
+  
+  p6{
+    color: white;
+    position: absolute;
+    font-size: 10px;
+    margin-top: 20px;
+    margin-left: 30%;
+  }
+  
+  </style>
+  
+ 
+  <a href="index.html"><button class="back"><i class="fa-solid fa-arrow-left-long"></i></button></a>
+  <img class="logo2" src="logo.png">
+    <h1>CHOOSE YOUR RIDE</h1>
+  
+  <div class="f1">
+    <img class="f1-choose" src="f1-choose.png">
+    <p1>FORMULA 1</p1>
+    <a href="play1.html"> <button class="go">GO <i class="fa-solid fa-arrow-right-long"></i></a></button>
+    </div>
+  
+  <div class="lambo">
+    <img class="lambo-choose" src="lambo-choose.png">
+    <p2>LAMBORGHINI</p2>
+    <a href="play2.html"> <button class="go2">GO <i class="fa-solid fa-arrow-right-long"></i></a></button>
+  </div>
+  
+  <div class="porsche">
+    <img class="porsche-choose" src="porsche-choose.png">
+    <p3>PORSCHE</p3>
+    <a href="play3.html"> <button class="go3">GO <i class="fa-solid fa-arrow-right-long"></i></a></button>
+  </div>
+  
+  <div class="mercedes">
+    <img class="mercedes-choose" src="mercedes-choose.png">
+    <p4>MERCEDES G-CLASS</p4>
+    <a href="play4.html"> <button class="go4">GO <i class="fa-solid fa-arrow-right-long"></i></a></button>
+  </div>
+  
+  <div class="bmw">
+    <img class="bmw-choose" src="bmw-choose.png">
+    <p5>BMW M5</p5>
+    <a href="play5.html"> <button class="go5">GO <i class="fa-solid fa-arrow-right-long"></i></a></button>
+  </div>
+  
+  <p6>&copy 2025, REV TORQUE | ARMAN</p6>
+  
+</body>
+</html>

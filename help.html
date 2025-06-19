@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/2b42ec6388.js" crossorigin="anonymous"></script>
+  <title>REV TORQUE HELP</title>
+</head>
+<body>
+  
+  <style>
+  
+  *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body{
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    justify-content: center;
+  align-items: center;
+  }
+  
+  .top{
+    position: absolute;
+    background-color: white;
+    height: 45px;
+    width: 100%;
+    box-shadow: 0 0 7px black;
+  }
+  
+  h1{
+    font-size: 21px;
+    position: absolute;
+    left: 50px;
+    top: 8px;
+  }
+  
+  .back3{
+    color: black;
+    background-color: red;
+    font-weight: bold;
+    font-size: 22px;
+    margin-left: 7px;
+    margin-top: 5px;
+    height: 35px;
+    width: 42px;
+    border: 2px solid orange;
+    border-radius: 10px;
+  }
+  
+  .left2{
+    position: absolute;
+    height: 50px;
+    width: 35px;
+    left: 6px;
+    top: 250px;
+    color: white;
+    background: orange;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-size: 17px;
+    font-weight: bold;
+    box-shadow: 0 0 2px black;
+    transition: transform 0.2s ease;
+  }
+  
+  .left2:hover{
+    transform: scale(1.1);
+  }
+  
+  .right2{
+    position: absolute;
+    height: 50px;
+    width: 35px;
+    right: 6px;
+    top: 250px;
+    color: white;
+    background: orange;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-size: 17px;
+    font-weight: bold;
+    box-shadow: 0 0 2px black;
+    transition: transform 0.2s ease;
+  }
+  
+  .right2:hover{
+    transform: scale(1.1);
+  }
+  
+  .slider-container {
+  position: absolute;
+  top: 70px;
+  left: 50px;
+  width: 260px;
+  height: 420px;
+  overflow: hidden;
+    border-radius: 15px;
+   
+}
+
+.slide {
+  background: black;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border-radius: 15px;
+  box-shadow: 0 0 8px black;
+  opacity: 0;
+  transform: translateX(100%);
+  transition: all 0.5s ease-in-out;
+}
+
+.slide.active {
+  opacity: 1;
+  transform: translateX(0);
+  z-index: 1;
+}
+
+.slide-title {
+  position: absolute;
+  top: 320px;
+  left: 80px;
+  font-size: 22px;
+  font-weight: bold;
+  color: white;
+}
+
+.slide-desc {
+  position: absolute;
+  top: 350px;
+  left: 13px;
+  font-size: 13px;
+  color: #BCBCBC;
+  font-weight: bold;
+}
+
+.s1 {
+  height: 300px;
+  width: 100%;
+  border-radius: 15px 15px 0 0;
+}
+  
+  .p1{
+    position: absolute;
+    top: 320px;
+    left: 30px;
+    font-weight: bold;
+    font-size: 15px;
+    color: white;
+  }
+  
+  .ul1{
+    position: absolute;
+  top: 340px;
+  left: 3px;
+  font-size: 8px;
+  color: #BCBCBC;
+  font-weight: bold;
+  }
+ 
+  .p3{
+    position: absolute;
+    top: 320px;
+    left: 15px;
+    font-weight: bold;
+    font-size: 15px;
+    color: white;
+  }
+  
+  .p4{
+    position: absolute;
+    top: 320px;
+    left: 10px;
+    font-weight: bold;
+    font-size: 15px;
+    color: white;
+  }
+  
+  .p5{
+    position: absolute;
+    top: 320px;
+    left: 15px;
+    font-weight: bold;
+    font-size: 15px;
+    color: white;
+  }
+  
+  .p6{
+    position: absolute;
+    top: 320px;
+    left: 2px;
+    font-weight: bold;
+    font-size: 14px;
+    color: white;
+  }
+  
+  .p7{
+    position: absolute;
+    top: 320px;
+    left: 5px;
+    font-weight: bold;
+    font-size: 13px;
+    color: white;
+  }
+  
+  p8{
+    color: black;
+    position: absolute;
+    font-size: 10px;
+    left: 28%;
+    top: 520px;
+    font-weight: bold;
+  }
+  
+  
+  
+  </style>
+  
+  <div class="top">
+    <a href="index.html"> <button class="back3"><i class="fa-solid fa-arrow-left-long"></i></button></a>
+  <h1>
+    WELCOME TO HELP CENTER 
+  </h1>
+  </div>
+  
+  <main>
+    
+    <button class="left2"> <i class="fa-solid fa-less-than"></i></button>
+      <button class="right2"> <i class="fa-solid fa-greater-than"></i></button>
+    
+    <div class="slider-container">
+  <div class="slide"> 
+    <img class="s1" src="s1img.jpg">
+    <p class="slide-title">SLIDE >>></p>
+    <ul class="slide-desc">TO KNOW HOW THE GAME WORKS</ul>
+  </div>
+
+  <div class="slide"> 
+    <img class="s1" src="s2img.jpg">
+    <p class="p1">HOW TO START THE GAME</p>
+    <ul class="ul1">1. CLICK TO [ PLAY NOW ] BUTTON FOR START THE GAME.</ul1>
+    <ul class="ul2">2. CLICK TO [ ABOUT ] BUTTON TO KNOW ABOUT ME & GAME.</ul>
+    <ul class="ul3">3. CHECK OUT CONNECT WITH ME SECTION SO YOU CAN CONNECT WITH ME ON SOCIAL MEDIA.</ul>
+  </div>
+
+  <div class="slide"> 
+    <img class="s1" src="s3img.jpg">
+    <p class="p3">HOW TO CHOOSE YOUR RIDE</p>
+    <ul class="ul1">1. CLICK ON THE IMAGE OF THE CAR YOU WANT TO DRIVE. </ul1>
+    <ul class="ul2">2. IF YOU WANT TO GO BACK THEN CLICK ON THE BUTTON GIVEN ON THE TOP LEFT SIDE.</ul>
+  </div>
+    
+      <div class="slide"> 
+    <img class="s1" src="s4img.jpg">
+    <p class="p4">AFTER CHOOSE YOUR VEHICLE</p>
+    <ul class="ul1">1. AFTER CHOOSING YOUR VEHICLE, YOU WILL SEE A GO BUTTON.</ul1>
+        <ul class="ul2">2. START THE GAME BY CLICKING ON THE [ GO ] BUTTON.</ul> 
+      </div>                     
+      
+     <div class="slide"> 
+    <img class="s1" src="s5img.jpg">
+    <p class="p5">HOW TO OPERATE THE GAME</p>
+    <ul class="ul1">1. CLICK ON THE [ START ] BUTTON TO PLAY THE GAME.</ul1>
+    <ul class="ul2">2. IF YOU WANT TO GO BACK AND SELECT ANOTHER VEHICLE THEN CLICK ON THE BUTTON GIVEN ON THE TOP LEFT SIDE.</ul>
+       <ul class="ul3">3. IF YOU WANT TO SEE YOUR SCORE, YO CAN LOOK AT THE TOP RIGHT SIDE.</ul>  
+  </div>               
+      
+      <div class="slide"> 
+    <img class="s1" src="s6img.jpg">
+    <p class="p6">HOW THE GAME FUNCTIONS WORK</p>
+    <ul class="ul1">1. YOU CAN SEE THE CAR YOU CHOOSE BELOW.</ul1>
+    <ul class="ul2">2. ALSO YOU CAN SEE THE OPPONENT CAR ON TOP.</ul>
+   <ul class="ul3">3. ALL YOU HAVE TO DO IS KEEP YOUR CAR MOVING FORWARD BY AVOIDING ALL THOSS CARS.</ul>
+   <ul class="ul4">4. YOU HAVE GOT TWO BUTTONS TO GO LEFT & RIGHT. YOU CAN USE THOSE BUTTONS TO MOVE YOUR CAR FORWARD.</ul>
+  </div>
+      
+      <div class="slide"> 
+    <img class="s1" src="s7img.jpg">
+    <p class="p7">AFTER YOUR & ENEMY CAR COLLIDE</p>
+    <ul class="ul1">1. AFTER YOUR & ENEMY CAR COLLIDE YOU WILL SEE SOME OPTIONS IN FRONT OF YOU.</ul1>
+        <ul class="ul2">2. YOU CAN SEE THE COMPLETE SCORE OF THAT GAME THERE.</ul>    
+        <ul class="ul3">3. YOU CAN PLAY THE GAME AGAIN BY CLICKING ON THE [ PLAY AGAIN ] BUTTON.</ul>
+  </div> 
+      
+         <div class="slide"> 
+    <img class="s1" src="s8img.jpg">
+    <p class="p7">THANKS FOR READING ALL THE INSTRUCTIONS CAREFULLY! NOW GO AHEAD, PLAY THE GAME, AND DON'T FORGET TO SHARE YOUR EXPERIENCE WITH ME. HAPPY GAMING! 😊</p>
+    <ul class="ul1"></ul1>
+  </div> 
+    </div>
+  </main>
+  
+  <footer>
+    <p8>&copy 2025, REV TORQUE | ARMAN</p8>
+  </footer>
+  
+  <script>
+  let currentSlide = 0;
+  const slides = document.querySelectorAll('.slide');
+  const totalSlides = slides.length;
+
+  function showSlide(index) {
+    slides.forEach((slide, i) => {
+      slide.classList.remove('active');
+      if (i === index) slide.classList.add('active');
+    });
+  }
+
+  // Show first slide initially
+  showSlide(currentSlide);
+
+  document.querySelector('.right2').addEventListener('click', () => {
+    currentSlide = (currentSlide + 1) % totalSlides;
+    showSlide(currentSlide);
+  });
+
+  document.querySelector('.left2').addEventListener('click', () => {
+    currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+    showSlide(currentSlide);
+  });
+</script>
+  
+  
+  
+  
+  
+</body>
+</html>
