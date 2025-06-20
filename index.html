@@ -1,14 +1,312 @@
 <!DOCTYPE html>
+
 <html>
 <head>
-  <meta charset="UTF-8">
-  <link rel="stylesheet" href="styles/style.css"/>
-  <title>Chat Bot</title>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://kit.fontawesome.com/2b42ec6388.js" crossorigin="anonymous"></script>
+  <title>REV TORQUE CAR GAME</title>
 </head>
 <body>
 
   
+  <style>
   
-</body>
+  *{
+    padding: 0;
+    margin: 0;
+  }  
+  
+  body{
+    overflow: hidden;
+    background: black;
+    
+  }
+  
+    .bg{
+      overflow: hidden;
+      height: 560px;
+      width: 360px;
+      
+    }
+  
+  .logo{
+  height: 40px; 
+  width: 40px;
+  position: absolute;
+  margin-left: 310px;
+  margin-top: -22px;  
+  border-radius: 50%;  
+  opacity: 0;   
+  transform: translateX(30px);
+  animation: slide3 0.8s ease-out forwards;
+  }
+  
+  @keyframes slide3{
+      to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  }
+  
+  h1{
+    margin-top: -560px;
+    margin-left: 10px;
+    font-size: 20px;
+    opacity: 0;
+    transform: translateX(-30px);
+    animation: slide4 0.8s ease-out forwards;
+  }
+  
+  @keyframes slide4{
+    to{
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  
+  p1{
+    position: absolute;
+    font-size: 13px;
+    margin-left: 10px;
+    opacity: 0;
+    transform: translateX(-30px);
+    animation: slideDown 0.8s ease-in-out forwards; 
+  }
+  
+  @keyframes slideDown{
+    to{
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  .play{
+    height: 40px;
+    width: 120px;
+    margin-top: 120px;
+    margin-left: 120px;
+    border: 2px solid black;
+    border-radius: 13px;
+    background-color: #4ADE80;
+    font-weight: bold;
+    box-shadow: 0 0 3px black inset;
+    opacity: 0;
+  transform: translateY(30px);
+  animation: slideup 0.5s  forwards;
+}
+  
+@keyframes slideup {
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  }
+  
+  .play:hover{
+    cursor: pointer;
+  }
+  
+  .help{
+    height: 40px;
+    width: 120px;
+    margin-top: 20px;
+    margin-left: 120px;
+    border: 2px solid black;
+    border-radius: 13px;
+    background-color: #FCD34D;
+    font-weight: bold;
+    box-shadow: 0 0 3px black inset;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: slideup 1s forwards;
+}
+  
+@keyframes slideup {
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  }
+  
+  .help:hover{
+    cursor: pointer;
+  }
+  
+  .about{
+    height: 40px;
+    width: 120px;
+    margin-top: 20px;
+    margin-left: 120px;
+    border: 2px solid black;
+    border-radius: 13px;
+    background-color: #F87171;
+    font-weight: bold;
+    box-shadow: 0 0 3px black inset;
+    opacity: 0;
+  transform: translateY(30px);
+  animation: slideup 1.5s forwards;
+}
+  
+@keyframes slideup {
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  }
+  
+  .about:hover{
+    cursor: pointer;
+  }
+  
+  .insta{
+   color: pink;
+   font-size: 30px;
+   position: absolute;
+   border-radius: 10px;
+   margin-left: 10px;
+   margin-top: 5px;
+   opacity: 0;
+   animation: fadeIn 0.5s ease-in-out forwards;
+   transition: transform 0.5s ease;
+ }
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+  
+  .insta:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+  }
+    
+  .x{
+   color: white;
+   font-size: 30px;
+   position: absolute;
+   border-radius: 10px;
+   margin-left: 60px;
+   margin-top: 5px;
+   opacity: 0;
+   animation: fadeIn 1s ease-in-out forwards;
+   transition: transform 0.5s ease;
+ }
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+  
+  .x:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+  }
+  
+   .threads{
+   color: white;
+   font-size: 30px;
+   position: absolute;
+   border-radius: 10px;
+   margin-left: 110px;
+   margin-top: 5px;
+   opacity: 0;
+   animation: fadeIn 1s ease-in-out forwards;
+   transition: transform 0.5s ease;
+ }
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+  
+  .threads:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+  }
+
+  .linkedin{
+   color: #0077B5;
+   font-size: 30px;
+   position: absolute;
+   border-radius: 10px;
+   margin-left: 160px;
+   margin-top: 5px;
+   opacity: 0;
+   animation: fadeIn 1s ease-in-out forwards;
+   transition: transform 0.5s ease;
+ }
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+  
+  .linkedin:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+  }
+ 
+
+ .last {
+   width: 360px;
+   height: 190px;
+   position: absolute;
+   top: 69%;
+   background: rgba(0, 0, 0, 0.6); /* Black with transparency */
+  backdrop-filter: blur(3px); /* Blur effect */
+  -webkit-backdrop-filter: blur(3px); /* Safari support */
+  color: white;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+  
+  p2{
+    position: absolute;
+    font-size: 10px;
+    margin-left: 5px;
+  }
+  
+  h2{
+    font-size: 18px;
+    margin-left: 5px;
+    margin-top: 50px;
+  }
+  
+  p3{
+    position: absolute;
+    font-size: 10px;
+    margin-top: 48px;
+    margin-left: 30%;
+  }
+  
+  </style>
+  
+ 
+  <img class="bg" src="bg1.jpg">
+  <h1>WELCOME TO REV TORQUE</h1>
+  <p1>SIMPLE TO PLAY, HARD TO MASTER</p1>
+  <img class="logo" src="logo.png" alt="REV TORQUE">
+  <a href="play.html"> <button class="play">PLAY NOW<i class="fa-solid fa-gamepad"></i></button></a>
+  <a href="help.html"> <button class="help">HELP <i class="fa-solid fa-circle-info"></i></button></a>
+  <a href="about.html"> <button class="about">ABOUT <i class="fa-solid fa-user"></i></button></a>
+  <footer>
+    <div class="last">
+      <p2>REV TORQUE is a thrilling 2D car dodging game where your reflexes are the key to survival. Drive straight down an endless highway while dodging incoming traffic at high speed.</p2>
+      <h2>CONNECT WITH ME -</h2>
+      <a href="https://www.instagram.com/ig_mr.arman?igsh=MXY5NTcyaG00MmlnZw==" class="insta"><i class="fa-brands fa-square-instagram"></i></a>
+    <a href="https://x.com/Ig_mrarman?t=7X_x2obr8F5T_bl8HkiHlQ&s=09" class="x"><i class="fa-brands fa-square-x-twitter"></i></a>
+    <a href="https://www.threads.net/@ig_mr.arman" class="threads"><i class="fa-brands fa-square-threads"></i></a>
+    <a href="https://www.linkedin.com/in/md-arman-87bb57364?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="linkedin"><i class="fa-brands fa-linkedin"></i></a>
+    <p3>&copy 2025, REV TORQUE | ARMAN</p3>
+  
+      
+    </div>
+  </footer>
+    
+  </body>
 </html>
